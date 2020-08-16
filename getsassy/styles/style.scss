@@ -1,0 +1,18 @@
+@import "./variables";
+@import "./header";
+// .contact button {
+//     background: $primaryBtn;
+// }
+.contact {
+    // @include flexCenter();
+    @extend header;
+    background: lightcoral;
+    background: rgb(168, 58, 58);
+    width: 100% - 20%;
+}
+
+// header {
+//     background: lightblue;
+//     display: flex;
+//     justify-content: center;
+// }
