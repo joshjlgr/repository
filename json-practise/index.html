@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let companies =
+
+            //paste json here
+            `[{
+                "name": "Big Corporation",
+                "numberOfEmployees": 10000,
+                "ceo": "Mary",
+                "rating": 3.6
+            }, {
+                "name": "Small Startup",
+                "numberOfEmployees": 3,
+                "ceo": null,
+                "rating": 4.3
+            }]`
+
+        //method 1 just log all
+        //console.log(companies)
+
+        //method 2 logs in array with double ` to json markup
+        console.log(JSON.parse(companies)[0].name)
+    </script>
+</body>
+
+</html>
