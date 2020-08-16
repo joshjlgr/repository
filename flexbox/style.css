@@ -1,0 +1,61 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .parent {
+        height: 100vh;
+        border: 20px solid rgb(198, 75, 255);
+        display: flex;
+        /* introduce between spaces */
+        /* justify-content: space-around; */
+        /* introduce in-between even space */
+        flex-wrap: wrap;
+        align-content: center;
+        /* align-content: flex-center; */
+        flex-flow: column wrap;
+        /* even spacing */
+        /* justify-content: space-evenly; */
+        /* align items property allows us to align elements to center of screen */
+        /* align-items: center; */
+        /* align-items: flex-start; */
+        flex-direction: column;
+        /* space around */
+        /* justify-content: space-around; */
+        /* Alternatives */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column;
+    
+    /* justity-content: flex-start; */
+    }
+    
+    .child1 {
+        width: 200px;
+        height: 200px;
+        background: rgb(195, 255, 83);
+        /* change order */
+        order: 3;
+    }
+    
+    .child2 {
+        width: 200px;
+        height: 200px;
+        background: rgb(1, 48, 87);
+        order: 2;
+        /* expanding portion size */
+        /* alternatives */
+        /* flex-grow: 1; */
+        /* flex-basis: 200px; */
+        flex: 1 0 auto;
+        align-self: flex-end;
+    }
+    
+    .child3 {
+        width: 200px;
+        height: 200px;
+        background: rgb(22, 196, 115);
+        order: 1;
+        /* best to repeat this to all child elements */
+        flex: 1 1 300px;
+    }
