@@ -1,0 +1,31 @@
+header, .contact {
+  HEIGHT: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: lightblue;
+  height: 100vh;
+  display: flex;
+  color: #c0b5df;
+}
+
+header button, .contact button {
+  background: #1d7a76;
+}
+
+header button::after, .contact button::after {
+  content: "Hellloooo";
+}
+
+.contact {
+  background: lightcoral;
+  background: #a83a3a;
+  width: 80%;
+}
+/*# sourceMappingURL=style.css.map */
